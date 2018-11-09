@@ -1,0 +1,13 @@
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\bin\Debug\VisualTreeTraversionPoC.exe.config
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\bin\Debug\VisualTreeTraversionPoC.exe
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\bin\Debug\VisualTreeTraversionPoC.pdb
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\MainWindow.g.cs
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\App.g.cs
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC_MarkupCompile.cache
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\MainWindow.baml
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC.g.resources
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC.Properties.Resources.resources
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC.csproj.GenerateResource.cache
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC.csproj.CoreCompileInputs.cache
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC.exe
+c:\users\x.pawe.rudnicki\source\repos\VisualTreeTraversionPoC\VisualTreeTraversionPoC\obj\Debug\VisualTreeTraversionPoC.pdb
