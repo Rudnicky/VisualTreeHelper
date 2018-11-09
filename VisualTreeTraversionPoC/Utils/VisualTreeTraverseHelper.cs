@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Media;
 
 namespace VisualTreeTraversionPoC.Utils
@@ -74,6 +75,32 @@ namespace VisualTreeTraversionPoC.Utils
             }
 
             return foundChild;
+        }
+
+        /// <summary>
+        /// Finds all controls of a specific type in visual tree
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="parent"></param>
+        /// <returns></returns>
+        public static IEnumerable<T> FindVisualChildren<T>(DependencyObject parent)
+            where T : DependencyObject
+        {
+            int childrenCount = VisualTreeHelper.GetChildrenCount(parent);
+            for (int i = 0; i < childrenCount; i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+
+                if (child is T childType)
+                {
+                    yield return (T)child;
+                }
+
+                foreach (var other in FindVisualChildren<T>(child))
+                {
+                    yield return other;
+                }
+            }
         }
     }
 }

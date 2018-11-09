@@ -45,5 +45,20 @@ namespace VisualTreeTraversionPoC
                 }
             }
         }
+
+        private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is StackPanel stackPanel)
+            {
+                var rectangles = VisualTreeTraverseHelper.FindVisualChildren<Rectangle>(stackPanel);
+                if (rectangles != null)
+                {
+                    foreach (var rectangle in rectangles)
+                    {
+                        // it should've been here
+                    }
+                }
+            }
+        }
     }
 }
