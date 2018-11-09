@@ -15,9 +15,10 @@
         <SolidColorBrush x:Key="JewelColorBrush">#4717F6</SolidColorBrush>
         <SolidColorBrush x:Key="StarkColorBrush">#E7DFDD</SolidColorBrush>
     </Window.Resources>
-    <Grid Margin="10" Background="{StaticResource StarkColorBrush}">
+    <Grid Margin="10" Background="{StaticResource StarkColorBrush}" MouseDown="Grid_MouseDown">
         <StackPanel Margin="10" Background="{StaticResource FushiaColorBrush}">
             <Rectangle
+                x:Name="MagnificientRectangle"
                 Height="360"
                 Fill="{StaticResource JewelColorBrush}"
                 MouseDown="Rectangle_MouseDown" Margin="18,0,19,0" />

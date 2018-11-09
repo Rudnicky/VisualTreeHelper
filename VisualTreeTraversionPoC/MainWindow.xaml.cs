@@ -33,5 +33,17 @@ namespace VisualTreeTraversionPoC
                 }
             }
         }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is Grid grid)
+            {
+                var rectangle = VisualTreeTraverseHelper.FindChild<Rectangle>(grid, "MagnificientRectangle");
+                if (rectangle != null)
+                {
+                    // we've got this!
+                }
+            }
+        }
     }
 }
