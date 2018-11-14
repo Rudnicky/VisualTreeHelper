@@ -16,15 +16,17 @@
         <SolidColorBrush x:Key="StarkColorBrush">#E7DFDD</SolidColorBrush>
     </Window.Resources>
     <Grid Margin="10" Background="{StaticResource StarkColorBrush}" MouseDown="Grid_MouseDown">
-        <StackPanel Margin="10" Background="{StaticResource FushiaColorBrush}" MouseDown="StackPanel_MouseDown">
-            <Rectangle
+        <StackPanel x:Name="LazyStackPanel">
+            <StackPanel Margin="10" Background="{StaticResource FushiaColorBrush}" MouseDown="StackPanel_MouseDown">
+                <Rectangle
                 x:Name="MagnificientRectangle"
                 Height="360"
                 Fill="{StaticResource JewelColorBrush}"
                 MouseDown="Rectangle_MouseDown" Margin="18,0,19,0" />
-            <Rectangle />
-            <Rectangle />
-            <Rectangle />
+                <Rectangle />
+                <Rectangle />
+                <Rectangle />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

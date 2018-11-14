@@ -58,6 +58,12 @@ namespace VisualTreeTraversionPoC
                         // it should've been here
                     }
                 }
+
+                var rect = VisualTreeTraverseHelper.GetChildOfType<Rectangle>(stackPanel);
+                if (rect != null)
+                {
+
+                }
             }
         }
     }
