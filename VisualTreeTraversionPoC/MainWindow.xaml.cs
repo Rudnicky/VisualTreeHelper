@@ -31,6 +31,12 @@ namespace VisualTreeTraversionPoC
                 {
                     // we've got this!
                 }
+
+                var lazyStackPanel = VisualTreeTraverseHelper.FindVisualParentByName(rectangle, "LazyStackPanel") as StackPanel;
+                if (lazyStackPanel != null)
+                {
+                    // cool
+                }
             }
         }
 

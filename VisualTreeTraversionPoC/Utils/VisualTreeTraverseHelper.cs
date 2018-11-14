@@ -29,6 +29,26 @@ namespace VisualTreeTraversionPoC.Utils
         }
 
         /// <summary>
+        /// Finds parent by given name
+        /// </summary>
+        /// <param name="dependencyObject"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static DependencyObject FindVisualParentByName(DependencyObject dependencyObject, string name)
+        {
+            if (dependencyObject != null)
+            {
+                DependencyObject parentObj = VisualTreeHelper.GetParent(dependencyObject);
+
+                if (parentObj != null && (string)parentObj.GetValue(FrameworkElement.NameProperty) == name)
+                    return parentObj;
+
+                return FindVisualParentByName(parentObj, name);
+            }
+            return null;
+        }
+
+        /// <summary>
         /// Finds a Child of a given item in the visual tree by name
         /// </summary>
         /// <typeparam name="T"></typeparam>
